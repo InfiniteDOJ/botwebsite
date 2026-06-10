@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModMail - Discord Ticketing</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-[#111111] text-[#E5E5E5] font-mono selection:bg-red-600 selection:text-white">
+
+    <nav class="flex justify-between items-center px-6 py-4 max-w-6xl mx-auto border-b border-[#222222]">
+        <a href="index.html" class="flex items-center space-x-2 font-bold text-base uppercase tracking-wider text-red-500 transition-none">
+            <i class="fa-solid fa-envelope"></i>
+            <span>ModMail</span>
+        </a>
+        
+        <div class="flex items-center space-x-6">
+            <div class="space-x-6 hidden md:flex text-sm uppercase tracking-wide text-[#888888]">
+                <a href="#features" class="hover:text-white transition-none">Features</a>
+                <a href="#setup" class="hover:text-white transition-none">Setup</a>
+                <a href="terms.html" class="hover:text-white transition-none">Terms</a>
+                <a href="privacy.html" class="hover:text-white transition-none">Privacy</a>
+                <a href="https://discord.gg/DMzgNtHXQc" target="_blank" class="hover:text-white transition-none">Support</a>
+            </div>
+            <a href="https://discord.com/oauth2/authorize?client_id=1504967896051486760&permissions=8&scope=bot" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold text-xs uppercase tracking-wider px-4 py-2 border border-red-500 transition-none">
+                Invite Bot
+            </a>
+        </div>
+    </nav>
+
+    <header class="flex flex-col items-center text-center px-6 py-16 max-w-4xl mx-auto">
+        <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight mb-4 bg-gradient-to-r from-red-500 via-red-600 to-amber-600 bg-clip-text text-transparent">
+            Bridge the Gap Between Staff and Members
+        </h1>
+        <p class="text-sm md:text-base text-[#888888] mb-8 max-w-2xl font-sans">
+            ModMail allows users to DM the bot to create private support tickets, ensuring organized, logged, and hassle-free moderation.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 mb-12 w-full sm:w-auto">
+            <a href="https://discord.com/oauth2/authorize?client_id=1504967896051486760&permissions=8&scope=bot" target="_blank" class="bg-red-600 hover:bg-red-700 text-white text-sm font-bold uppercase tracking-wider px-8 py-3 border border-red-500 transition-none text-center">
+                <i class="fa-brands fa-discord mr-2"></i> Add to Discord
+            </a>
+            <a href="https://discord.gg/DMzgNtHXQc" target="_blank" class="bg-[#222222] hover:bg-[#333333] text-[#E5E5E5] text-sm font-bold uppercase tracking-wider px-8 py-3 border border-[#444444] transition-none text-center">
+                Support Server
+            </a>
+        </div>
+
+        <div class="w-full max-w-lg bg-[#1A1A1A] border-2 border-[#222222] p-2">
+            <img src="https://github.com/InfiniteDOJ/botwebsite/blob/main/48441-email.png?raw=true" alt="ModMail System" class="w-full h-auto block opacity-90">
+        </div>
+    </header>
+
+    <section id="features" class="max-w-6xl mx-auto px-6 py-12 border-t border-[#222222]">
+        <h2 class="text-xl font-bold uppercase tracking-widest text-center mb-10 text-red-500">// System Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-[#1A1A1A] p-6 border border-[#222222] hover:border-red-600 transition-none">
+                <div class="text-red-500 text-lg mb-3"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3 class="text-md font-bold uppercase tracking-wide mb-2 text-white">Secure Ticketing</h3>
+                <p class="text-xs text-[#888888] font-sans leading-relaxed">Users message the bot privately, creating isolated channels for staff to handle issues safely.</p>
+            </div>
+            <div class="bg-[#1A1A1A] p-6 border border-[#222222] hover:border-red-600 transition-none">
+                <div class="text-red-500 text-lg mb-3"><i class="fa-solid fa-file-lines"></i></div>
+                <h3 class="text-md font-bold uppercase tracking-wide mb-2 text-white">Full Transcripts</h3>
+                <p class="text-xs text-[#888888] font-sans leading-relaxed">Automatically logs conversations upon closing a ticket, perfect for keeping accountability records.</p>
+            </div>
+            <div class="bg-[#1A1A1A] p-6 border border-[#222222] hover:border-red-600 transition-none">
+                <div class="text-red-500 text-lg mb-3"><i class="fa-solid fa-sliders"></i></div>
+                <h3 class="text-md font-bold uppercase tracking-wide mb-2 text-white">Customizable Layout</h3>
+                <p class="text-xs text-[#888888] font-sans leading-relaxed">Change system prefixes, edit initial greeting text, and configure designated responder roles.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="setup" class="max-w-4xl mx-auto px-6 py-12 border-t border-[#222222]">
+        <h2 class="text-xl font-bold uppercase tracking-widest text-center mb-2 text-red-500">// Initialization</h2>
+        <p class="text-xs text-[#888888] text-center mb-10 uppercase tracking-wider">Deploying the module to your guild</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            <div class="bg-[#1A1A1A] p-4 border border-[#222222]">
+                <div class="text-red-500 font-bold text-sm mb-2">[01] AUTHORIZE</div>
+                <p class="text-xs text-[#888888] font-sans">Invite the bot via the link and grant required permissions.</p>
+            </div>
+            <div class="bg-[#1A1A1A] p-4 border border-[#222222]">
+                <div class="text-red-500 font-bold text-sm mb-2">[02] CONFIGURE</div>
+                <p class="text-xs text-[#888888] font-sans">Run the setup utility command inside your server terminal.</p>
+            </div>
+            <div class="bg-[#1A1A1A] p-4 border border-[#222222]">
+                <div class="text-red-500 font-bold text-sm mb-2">[03] ONLINE</div>
+                <p class="text-xs text-[#888888] font-sans">Members can now direct message the bot to initiate tickets.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#0A0A0A] text-[#555555] text-xs py-8 px-6 border-t border-[#222222] text-center tracking-wide">
+        <p class="mb-2">&copy; 2026 ModMail Bot. Operational.</p>
+        <div class="space-x-4 mb-2 flex justify-center items-center">
+            <a href="index.html" class="text-[#888888] hover:text-white transition-none underline">Home</a>
+            <span class="text-[#222222]">|</span>
+            <a href="terms.html" class="text-[#888888] hover:text-white transition-none underline">Terms of Service</a>
+            <span class="text-[#222222]">|</span>
+            <a href="privacy.html" class="text-[#888888] hover:text-white transition-none underline">Privacy Policy</a>
+        </div>
+        <p class="text-[10px] uppercase text-[#444444]">Independent utility. Not affiliated with Discord Inc.</p>
+    </footer>
+
+</body>
+</html>
